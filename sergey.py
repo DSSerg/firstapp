@@ -222,7 +222,7 @@ def main(
     
     
     st.sidebar.title('Веб-приложение для Сергея Петровича')
-    st.sidebar.image('hi.jpg')
+    st.sidebar.image('hi.JPG')
     st.sidebar.info('Фамилия разработчика слишком известная :)')
     
     
