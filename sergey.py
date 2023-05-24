@@ -221,12 +221,12 @@ def main(
     
     
     
-    st.sidebar.title('Веб-приложение для Сергея Петровича')
+    st.sidebar.title('Веб-приложение для Андрея')
     st.sidebar.image('hi.JPG')
-    st.sidebar.info('Фамилия разработчика слишком известная :)')
+    st.sidebar.info('Сергей :)')
     
     
-    st.markdown("<h1 style='text-align: center; '>Это Ваше первое простое, но такое гордое веб-приложение :).</h1>", unsafe_allow_html = True)
+    st.markdown("<h1 style='text-align: center; '>ПОЗДРАВЛЯЕМ!!</h1>", unsafe_allow_html = True)
     #st.image('hi.jpg', width=400)
    
     
@@ -234,7 +234,7 @@ def main(
     
 
     
-    if st.button("Нажмите кнопку! Там ешё пару сюрпризов."):
+    if st.button("ЖМи быстрее! Там ешё пару сюрпризов."):
         
         
       
@@ -245,7 +245,7 @@ def main(
         st.balloons()
         time.sleep(2.5)
         st.balloons()
-       
+        st.snow()
 
 if __name__ == '__main__':
     main(rain)
