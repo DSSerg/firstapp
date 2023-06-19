@@ -10,7 +10,7 @@ st.write("""
 Clusterisation predict App
 """)
 #загрузка модели
-clust = pickle.load(open("model1.pkl", "rb"))
+clust = pickle.load(open("model3.pkl", "rb"))
 st.sidebar.header('Ввод параметров')
 
 def user_input_features():
@@ -18,7 +18,7 @@ def user_input_features():
     age = st.sidebar.slider('Age', 14, 50, 35)
     trans = st.sidebar.slider('Transactions', 0.0, 5000.0, 100.0)
     data = {'CustGender': gender,
-            'TransactionAmount (BYN)': trans/100,
+            'TransactionAmount (BYN)': trans,
             'Age': age}
     features = pd.DataFrame(data, index=[0])
     return features
