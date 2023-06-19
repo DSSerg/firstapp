@@ -28,7 +28,7 @@ st.subheader('Введенные параметры')
 st.write(df)
 
 #загрузка модели
-clust = pickle.load(open("model1.pkl", "rb"))
+clust = pickle.load(open("model2.pkl", "rb"))
 result=clust.predict(df)
 
 st.write("Клиент относится к кластеру:", result)
