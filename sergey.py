@@ -19,7 +19,8 @@ def user_input_features():
     data = {'CustGender': gender,
             'TransactionAmount (BYN)': trans,
             'Age': age}
-    features = pd.DataFrame(data)
+    #features = pd.DataFrame(data, index=[0])
+    features=np.array(data)
     return features
 
 df = user_input_features()
