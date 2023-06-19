@@ -31,5 +31,5 @@ st.write(df)
 clust = pickle.load(open("model1.pkl", "rb"))
 result=clust.predict(df)
 
-st.write("Клиент относится к кластеру:", result[2])
+st.write("Клиент относится к кластеру:", result)
 
