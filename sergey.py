@@ -31,7 +31,7 @@ st.write(dff)
 
 result=clust.predict(dff)
 
-st.write(dff)
+#st.write(dff)
 
 st.write("Клиент относится к кластеру:", result)
 
