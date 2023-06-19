@@ -16,9 +16,9 @@ def user_input_features():
     gender = st.sidebar.slider('Gender (0 - female, 1 - male)', 0, 1, 1)
     age = st.sidebar.slider('Age', 14, 90, 35)
     trans = st.sidebar.slider('Transactions', 0, 1000, 100)
-    data = {'gender': gender,
-            'age': age,
-            'trans': trans}
+    data = {'CustGender': gender,
+            'Age': age,
+            'TransactionAmount (BYN)': trans}
     features = pd.DataFrame(data, index=[0])
     return features
 
