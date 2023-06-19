@@ -14,8 +14,8 @@ st.sidebar.header('Ввод параметров')
 
 def user_input_features():
     gender = st.sidebar.slider('Gender (0 - female, 1 - male)', 0, 1, 1)
-    age = st.sidebar.slider('Age', 14, 90, 35)
-    trans = st.sidebar.slider('Transactions', 0, 10000, 100)
+    age = st.sidebar.slider('Age', 14, 70, 35)
+    trans = st.sidebar.slider('Transactions', 0, 50000, 1000)
     data = {'CustGender': gender,
             'TransactionAmount (BYN)': trans,
             'Age': age}
