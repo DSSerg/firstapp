@@ -13,7 +13,7 @@ st.sidebar.header('Ввод параметров')
 def user_input_features():
     gender = st.sidebar.slider('Gender', 0, 1, 1)
     age = st.sidebar.slider('Age', 14, 90, 35)
-    trans = st.sidebar.slider('Transactions', 1.0, 6.9, 1.3)
+    trans = st.sidebar.slider('Transactions', 0.0, 100000, 1000)
     data = {'gender': gender,
             'age': age,
             'trans': trans}
