@@ -17,10 +17,9 @@ def user_input_features():
     age = st.sidebar.slider('Age', 14, 70, 35)
     trans = st.sidebar.slider('Transactions', 0, 50000, 1000)
     data = {'CustGender': gender,
-            'TransactionAmount (BYN)': trans,
+            'TransactionAmount (BYN)': (float) trans,
             'Age': age}
-    #features = pd.DataFrame(data, index=[0])
-    features=np.array(data)
+    features = pd.DataFrame(data, index=[0])
     return features
 
 df = user_input_features()
@@ -32,8 +31,7 @@ st.write(df)
 #pickle_in = open('model.pkl', 'rb')
 #clust = pickle.load(open("https://drive.google.com/file/d/1oUBUar4jsVNr9VnNNT0LAtkZfdzWprjs/view?usp=sharing", "rb"))
 clust = pickle.load(open("model.pkl", "rb"))
-#to_predict=np.array(gender,age,trans)
 result=clust.predict(df)
 
-st.write("кластер=", result)
+st.write("Клиент относится к кластеру:", result)
 
