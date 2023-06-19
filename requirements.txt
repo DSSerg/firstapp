@@ -1,7 +1,9 @@
 #pip == 22.3.1
 pip
-streamlit  == 1.17.0
-Pillow == 9.4.0
+#streamlit  == 1.17.0
+streamlit
+#Pillow == 9.4.0
+Pillow
 streamlit_extras
 streamlit_player
 
