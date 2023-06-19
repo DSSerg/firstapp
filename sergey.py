@@ -5,7 +5,6 @@ import pickle
 
 
 st.write("""
-# Simple Iris Flower Prediction App
 Clusterisation predict App
 """)
 
@@ -14,7 +13,7 @@ st.sidebar.header('Ввод параметров')
 def user_input_features():
     gender = st.sidebar.slider('Gender', 0, 1, 1)
     age = st.sidebar.slider('Age', 14, 90, 35)
-    trans = st.sidebar.slider('Petal length', 1.0, 6.9, 1.3)
+    trans = st.sidebar.slider('Transactions', 1.0, 6.9, 1.3)
     data = {'gender': gender,
             'age': age,
             'trans': trans}
@@ -31,12 +30,4 @@ pickle_in = open('model.pkl', 'rb')
 clust = pickle.load(pickle_in)
 
 
-#prediction = clf.predict(df)
-#prediction_proba = clf.predict_proba(df)
 
-#st.subheader('Class labels and their corresponding index number')
-#st.write(iris.target_names)
-
-#st.subheader('Prediction')
-#st.write(iris.target_names[prediction])
-#st.write(prediction)
