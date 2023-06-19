@@ -32,3 +32,4 @@ st.write(df)
 clust = pickle.load(open("model.pkl", "rb"))
 
 
+
