@@ -7,6 +7,6 @@ streamlit_player
 
 
 #pickleshare==0.7.5
-#scikit-learn==0.23.2
+scikit-learn
 
 
