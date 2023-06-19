@@ -9,12 +9,13 @@ import pickle
 st.write("""
 Clusterisation predict App
 """)
-
+#загрузка модели
+clust = pickle.load(open("model2.pkl", "rb"))
 st.sidebar.header('Ввод параметров')
 
 def user_input_features():
     gender = st.sidebar.slider('Gender (0 - female, 1 - male)', 0, 1, 1)
-    age = st.sidebar.slider('Age', 14, 70, 35)
+    age = st.sidebar.slider('Age', 14, 50, 35)
     trans = st.sidebar.slider('Transactions', 0.0, 70000.0, 1000.0)
     data = {'CustGender': gender,
             'TransactionAmount (BYN)': trans,
@@ -22,14 +23,13 @@ def user_input_features():
     features = pd.DataFrame(data, index=[0])
     return features
 
-df = user_input_features()
+dff = user_input_features()
 
 st.subheader('Введенные параметры')
-st.write(df)
+st.write(dff)
 
-#загрузка модели
-clust = pickle.load(open("model2.pkl", "rb"))
-result=clust.predict(df)
+
+result=clust.predict(dff)
 
 st.write("Клиент относится к кластеру:", result)
 
