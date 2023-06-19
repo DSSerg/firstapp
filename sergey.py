@@ -28,6 +28,7 @@ st.write(df)
 
 #загрузка модели
 #pickle_in = open('model.pkl', 'rb')
-clust = pickle.load(open("https://drive.google.com/file/d/1oUBUar4jsVNr9VnNNT0LAtkZfdzWprjs/view?usp=sharing", "rb"))
+#clust = pickle.load(open("https://drive.google.com/file/d/1oUBUar4jsVNr9VnNNT0LAtkZfdzWprjs/view?usp=sharing", "rb"))
+clust = pickle.load(open("model.pkl", "rb"))
 
 
