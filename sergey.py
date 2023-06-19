@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import os
 import pickle
-#import sklearn
-from sklearn import  KMeans
+import sklearn
+#from sklearn import  KMeans
 
 
 st.write("""
