@@ -30,6 +30,8 @@ st.write(df)
 #pickle_in = open('model.pkl', 'rb')
 #clust = pickle.load(open("https://drive.google.com/file/d/1oUBUar4jsVNr9VnNNT0LAtkZfdzWprjs/view?usp=sharing", "rb"))
 clust = pickle.load(open("model.pkl", "rb"))
+to_predict=np.array(gender,age,trans)
+result=clust(to_predict)
 
-st.write(" гуд!")
+st.write("кластер=", result)
 
