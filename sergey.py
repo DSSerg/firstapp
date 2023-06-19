@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import pickle
 #import sklearn
-from sklearn import datasets, KMeans
+from sklearn import  KMeans
 
 
 st.write("""
