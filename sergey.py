@@ -11,7 +11,7 @@ Clusterisation predict App
 st.sidebar.header('Ввод параметров')
 
 def user_input_features():
-    gender = st.sidebar.slider('Gender', 0, 1, 1)
+    gender = st.sidebar.slider('Gender (0 - female, 1 - male)', 0, 1, 1)
     age = st.sidebar.slider('Age', 14, 90, 35)
     trans = st.sidebar.slider('Transactions', 0, 1000, 100)
     data = {'gender': gender,
@@ -22,7 +22,7 @@ def user_input_features():
 
 df = user_input_features()
 
-st.subheader('Ввод параметров')
+st.subheader('Введенные параметры')
 st.write(df)
 
 #загрузка модели
