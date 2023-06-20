@@ -10,7 +10,7 @@ st.write("""
 Clusterisation predict App
 """)
 #загрузка модели
-clust = pickle.load(open("model3.pkl", "rb"))
+clust = pickle.load(open("model.pkl", "rb"))
 st.sidebar.header('Ввод параметров')
 
 def user_input_features():
