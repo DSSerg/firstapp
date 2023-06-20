@@ -29,5 +29,5 @@ st.subheader('Введенные параметры')
 st.write(dff)
 result=clust.predict(dff)
 #st.write(dff)
-st.write("Клиент относится к кластеру:", result-dff['CustGender'])
+st.write("Клиент относится к кластеру:", (result-dff['CustGender']))
 
