@@ -17,7 +17,7 @@ def user_input_features():
     gender = st.sidebar.slider('Gender (0 - female, 1 - male)', 0, 1, 1)
     age = st.sidebar.slider('Age', 14, 50, 35)
     trans = st.sidebar.slider('Transactions', 0.0, 10000.0, 100.0)
-    bal=st.sidebar.slider("Balance', 0.0, 20000.0, 1000.0)
+    bal=st.sidebar.slider('Balance', 0.0, 20000.0, 1000.0)
     data = {'CustGender': gender,
             'TransactionAmount (BYN)': trans,
             'Age': age}
