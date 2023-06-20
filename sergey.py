@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import os
 import pickle
-import random
 #import sklearn
 #from sklearn import  KMeans
  
@@ -30,6 +29,6 @@ dff = user_input_features()
 st.subheader('Введенные параметры')
 st.write(dff)
 result=clust.predict(dff)
-#st.write(dff)
-st.write("Клиент относится к кластеру:", (result-random.randint(1,4)))
+st.write(dff)
+#st.write("Клиент относится к кластеру:", (result)
 
