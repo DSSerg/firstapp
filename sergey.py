@@ -13,7 +13,7 @@ Clusterisation predict App
 #загрузка модели
 clust = pickle.load(open("model.pkl", "rb"))
 st.sidebar.header('Ввод параметров')
-
+ 
 def user_input_features():
     gender = st.sidebar.slider('Gender (0 - female, 1 - male)', 0, 1, 1)
     age = st.sidebar.slider('Age', 14, 50, 35)
