@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import os
 import pickle
+import random
 #import sklearn
 #from sklearn import  KMeans
  
@@ -30,5 +31,5 @@ st.subheader('Введенные параметры')
 st.write(dff)
 result=clust.predict(dff)
 #st.write(dff)
-st.write("Клиент относится к кластеру:", (result-dff['CustGender']))
+st.write("Клиент относится к кластеру:", (result-dff['CustGender']-random.randint(1-3))
 
